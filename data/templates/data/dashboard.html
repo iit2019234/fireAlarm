@@ -129,7 +129,7 @@
                    
                     sendToDashboard(sanpshot.val().temperature,sanpshot.val().gas,sanpshot.val().flame_sensor,loop);
                     if(sanpshot.val().temperature>15 && sanpshot.val().gas>=15 && sanpshot.val().flame_sensor>=18){
-                        //sendEmail(sanpshot.val().temperature,sanpshot.val().gas,sanpshot.val().flame_sensor);
+                        sendEmail(sanpshot.val().temperature,sanpshot.val().gas,sanpshot.val().flame_sensor);
                         sendalert();
                         // alert("Warning: FIRE DETECTED🔥🔥🔥")
                     }
